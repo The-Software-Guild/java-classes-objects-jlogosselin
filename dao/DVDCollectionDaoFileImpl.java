@@ -44,9 +44,8 @@ public class DVDCollectionDaoFileImpl implements DVDCollectionDao{
     @Override
     public DVDItem editDVDinCollection(int choice, String title, DVDItem newDVDEntry) throws DVDCollectionDaoException {
         /*
-        REMEMBER: it is impossible rename/modify the hashmap key once added
+        REMEMBER: it is impossible to rename/modify the hashmap key.
         Only way is to delete/remove the key and insert with new key and value pair.
-        Reason : In hashmap internal implementation the Hashmap key modifier marked as final
          */
         loadDVDCollectionFromFileToMemory();
         DVDItem editedDVD;
