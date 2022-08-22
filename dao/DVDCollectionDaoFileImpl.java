@@ -63,7 +63,7 @@ public class DVDCollectionDaoFileImpl implements DVDCollectionDao{
         return editedDVD;
     }
 
-    private DVDItem unmarshallStudent(String dvdAsText){
+    private DVDItem unmarshallDVD(String dvdAsText){
 
         // dvdAsText is expecting a line read in from our file.
         // For example, it might look like this:
@@ -110,7 +110,7 @@ public class DVDCollectionDaoFileImpl implements DVDCollectionDao{
 
         while (scanner.hasNextLine()) {
             currentLine = scanner.nextLine();
-            currentDVD = unmarshallStudent(currentLine);
+            currentDVD = unmarshallDVD(currentLine);
             this.allDVDsStoredInMemory.put(currentDVD.getTitle(), currentDVD);
         }
         scanner.close();
