@@ -7,9 +7,6 @@ public class UserIOConsoleImpl implements UserIO{
 
     public UserIOConsoleImpl(){}
 
-    //below: implementing the methods listed in the interface
-    //this is done by using the @Override annotation
-
     @Override
     public void print(String message){
         System.out.println(message);

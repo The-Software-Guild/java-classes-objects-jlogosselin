@@ -54,7 +54,6 @@ public interface DVDCollectionDao {
     DVDItem removeDVD(String title)
             throws DVDCollectionDaoException;
 
-
     /**
      * Edits from the collection the DVD associated with the given title.
      * Returns the DVD object that is being edited or null if
